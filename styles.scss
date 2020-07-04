@@ -1,0 +1,144 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	text-align: left;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
+}
+
+p {
+	color: gray;
+	font-size: 12px;
+}
+
+.header {
+	font-size: 2rem;
+}
+
+.customeB {
+	border: none;
+	border-radius: 50px;
+	background-color: hsl(180, 66%, 49%);
+	color: white;
+	padding: 8px 24px;
+}
+
+.custimeBA {
+	border: none;
+	border-radius: 50px;
+	background-color: 0;
+	color: white;
+}
+
+.head {
+	padding: 1% 10% 0%;
+
+	.mainH {
+		margin: 10% 0;
+
+		h1 {
+			margin-top: 10%;
+			font-size: 4rem;
+		}
+
+		p {
+			margin: 0;
+			width: 25rem;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.search {
+		background-color: hsl(257, 27%, 26%);
+		border-radius: 5px;
+		position: relative;
+		bottom: -3.5rem;
+		background-image: url("./images/bg-boost-desktop.svg");
+
+		.form-control {
+			width: 70%;
+			margin: 4%;
+		}
+	}
+}
+
+@mixin con($mar) {
+	background-color: white;
+	padding: 2%;
+	margin: $mar 2% 2%;
+	border-radius: 10px;
+	float: left;
+	width: 20rem;
+
+
+	img {
+		position: absolute;
+		margin-top: -2.5rem;
+		background-color: hsl(257, 27%, 26%);
+		border-radius: 50%;
+		padding: 1rem;
+	}
+}
+
+.information {
+	background-color: hsl(0, 0%, 95%);
+	padding: 10% 10% 30rem;
+	height: 35rem;
+
+	.header {
+		text-align: center;
+	}
+
+	h5 {
+		margin-top: 3rem;
+	}
+}
+
+.con_01 {
+	@include con(0rem);
+}
+
+.con_02 {
+	@include con(1rem);
+}
+
+.con_03 {
+	@include con(2rem);
+}
+
+.d01 {
+	text-align: center;
+	padding: 6% 10%;
+	background-color: hsl(257, 27%, 26%);
+	color: white;
+	background-image: url("./images/bg-boost-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+footer {
+	padding: 5% 10% 0%;
+	
+	.fas {
+		border: none;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		margin: 3rem;
+		opacity: .5;
+
+		:hover {
+			border: none;
+			color: red;
+			opacity: 1;
+		}
+	}
+}
